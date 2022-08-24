@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-08-24 21:42:21 +0900
-updated : 2022-08-24 21:42:35 +0900
+updated : 2022-08-24 22:00:20 +0900
 tags    : 
 toc     : true
 public  : true
@@ -52,10 +52,10 @@ latex   : false
 - spring boot는 톰캣과 같은 내장 서버를 가지고 있다.
 
 ## 참고 자료
-spring vs spring boot로 검색
-https://server-engineer.tistory.com/739
-https://www.youtube.com/watch?v=OdpPvdB7qZY&ab_channel=우아한Tech
+- spring vs spring boot로 검색
+- https://server-engineer.tistory.com/739
+- https://www.youtube.com/watch?v=OdpPvdB7qZY&ab_channel=우아한Tech
 
 ## 더 읽어볼 내용
-https://ssoco.tistory.com/66 우테코 발표자가 쓴 블로그
-https://jjunii486.tistory.com/84 IoC를 설명한 블로그
+- https://ssoco.tistory.com/66 우테코 발표자가 쓴 블로그
+- https://jjunii486.tistory.com/84 IoC를 설명한 블로그
