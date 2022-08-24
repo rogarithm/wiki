@@ -49,6 +49,7 @@
 * [[/web/traffic]]
 
 ## quiz
+* [[/quiz/auto-scaling]]
 * [[/quiz/scale-up-vs-scale-out]]
 * [[/quiz/prevent-cookie-abusing]]
 
