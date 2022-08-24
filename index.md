@@ -20,6 +20,7 @@
 * [[/java/local-variable-vs-instance-variable]]
 
 ## jsp
+* [[/jsp/statement-vs-prestatement]]
 * [[/jsp/filter]]
 * [[/jsp/jsp]]
 * [[/jsp/mvc-pattern]]
