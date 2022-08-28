@@ -6,6 +6,10 @@
 * [[/data-structure/profiling-list-data-structure]]
 * [[/data-structure/tree]]
 
+## infra
+* [[/infra/continuous-delivery]]
+* [[/infra/continuous-integration]]
+
 ## java
 * [[/java/classpath]]
 * [[/java/conversion-and-contexts]]
