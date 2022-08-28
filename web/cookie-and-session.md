@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-08-23 20:42:25 +0900
-updated : 2022-08-23 20:42:31 +0900
+updated : 2022-08-28 14:34:32 +0900
 tags    : 
 toc     : true
 public  : true
@@ -48,6 +48,21 @@ latex   : false
   + 서버는 쿠키 정보를 변경해야 하면 쿠키를 업데이트하고, 변경된 쿠키를 HTTP 헤더에 포함해 응답한다.
   + 쿠키 만료 기간이 있다면 브라우저가 종료되어도 클라이언트에서 쿠키를 보관하고 있는다.
 
+### 쿠키의 보안 속성
+#### Secure
+- http 프로토콜로 전송되는 쿠키는 암호화되지 않은 상태로 서버로 전달된다. 해커는 이 암호화되지 않은 요청정보를 가로채서 쿠키를 탈취한다.
+- Secure 속성을 사용하면 브라우저는 https가 아닌 통신에서는 쿠키를 전송하지 않는다. https 프로토콜에서는 전달할 데이터를 암호화한다. 쿠키 역시 암호화되어 전송되기 때문에 제 3자는 내용을 알 수 없게 된다.
+```
+Set-Cookie: <쿠키 이름>=<쿠키 값>; Secure
+```
+
+#### HttpOnly.
+- 클라이언트에서 자바스크립트로 쿠키를 조회할 수 있다. CSS 또는 XSS(Cross Site Scripting)은 이 점을 악용해 해커가 사용자의 쿠키를 탈취하는 대표적인 공격이다.
+- Set-Cookie 응답 헤더에 HttpOnly  속성을 명시하면 브라우저에서 쿠키에 접근할 수 없도록 제한한다. 그러면 XSS와 같은 공격을 차단할 수 있다.
+```
+Set-Cookie: <쿠키 이름>=<쿠키 값>; HttpOnly
+```
+
 ## 세션
 ### 세션의 정의
 - 동일한 브라우저로부터 들어오는 일련의 요구를 하나의 상태로 보고, 그 상태를 일정 시간 유지시키는 기술
@@ -72,3 +87,4 @@ latex   : false
 - https://www.daleseo.com/http-cookies/
 - https://www.daleseo.com/http-session/
 - https://www.youtube.com/watch?v=-4ZsGy1LOiE&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9CTech
+- https://nsinc.tistory.com/121
