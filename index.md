@@ -41,6 +41,7 @@
 
 ## spring
 * [[/spring/spring-vs-spring-boot]]
+* [[/spring/interceptor-vs-filter]]
 
 ## web
 * [[/web/cookie-and-session]]
