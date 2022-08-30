@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-08-23 20:44:05 +0900
-updated : 2022-08-23 20:44:27 +0900
+updated : 2022-08-30 21:41:10 +0900
 tags    : 
 toc     : true
 public  : true
@@ -80,6 +80,10 @@ III. 별도의 세션 저장소
 – 이때문에 로그인 세션 같은, 서버가 꺼져도 상관없는 임시 데이터를 주로 사용합니다.
 – DB가 재구동될 때 디스크로부터 로그 파일을 읽어와 DBMS 구조를 재구축하는 방법을 써서 휘발성 때문에 생기는 단점을 보완하기도 합니다.
 
+#### Disk-Based DB
+Mysql, PostgreSQL, MongoDB 등이 여기 속합니다.
+I/O 속도가 느립니다.
+전원이 꺼지더라도 데이터가 날아가지 않습니다.
 
 참고 자료
 스케일 업, 스케일 아웃
@@ -90,3 +94,4 @@ https://junghyungil.tistory.com/163?category=900222
 https://junshock5.tistory.com/84
 https://hamryt.tistory.com/4
 https://liasn.tistory.com/3
+https://hudi.blog/session-consistency-issue/
