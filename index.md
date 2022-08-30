@@ -7,8 +7,7 @@
 * [[/data-structure/tree]]
 
 ## infra
-* [[/infra/continuous-delivery]]
-* [[/infra/continuous-integration]]
+* [[/infra/ci-cd]]
 
 ## java
 * [[/java/classpath]]
