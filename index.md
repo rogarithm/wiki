@@ -8,6 +8,7 @@
 
 ## infra
 * [[/infra/ci-cd]]
+* [[/infra/devops]]
 
 ## java
 * [[/java/classpath]]
