@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-08-30 15:30:06 +0900
-updated : 2022-08-30 16:45:05 +0900
+updated : 2022-08-31 02:12:16 +0900
 tags    : 
 toc     : true
 public  : true
@@ -34,3 +34,4 @@ CI/CD를 사용하여 사용자 요구사항 반영을 위한 변경 사항이 �
 ## 참고 자료
 https://www.atlassian.com/devops
 https://simsimjae.medium.com/devops란-무엇인가-c50f4d86666b
+https://imbf.github.io/devops/2020/10/28/What-is-The-DevOps.html
