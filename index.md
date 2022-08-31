@@ -53,6 +53,7 @@
 * [[/web/https]]
 * [[/web/load-balancer]]
 * [[/web/traffic]]
+* [[/web/idempotent-http-method]]
 
 ## quiz
 * [[/quiz/auto-scaling]]
