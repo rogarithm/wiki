@@ -21,8 +21,7 @@ latex   : false
 
 참고로 테스트는 MacOS Mojave의 bash에서 실행했다.
 
-## 단순한 경우의 실행 환경을 만들고 실행해본다.
-### 클래스 패스를 설정하지 않는 경우
+## 클래스 패스를 설정하지 않는 경우
 1. 테스트 환경을 만든다.
 - `/java/export` 디렉토리에 `MyClass.java`라는 자바 파일을 만든다.
 ```
@@ -57,7 +56,7 @@ $ java MyClass
 Happy Coding!
 ```
 
-### 현재 위치에 클래스 파일이 없을 때 클래스 패스 설정
+## 현재 위치에 클래스 파일이 없는 경우
 - java 명령을 실행할 때 -classpath 옵션으로 실행하고자 하는 클래스의 위치를 설정해주어야 한다.
 - 하지만 위에서 실행할 때는 클래스패스 옵션을 설정하지 않았다. 왜냐하면 클래스패스 옵션을 명시하지 않더라도 설정되는 기본값이 있기 때문이다. 기본값으로 설정되는 클래스패스라도 문제 없는 경우라면 클래스패스를 설정하지 않더라도 프로그램을 실행할 수 있다.
 - 아무 옵션을 주지 않았을 때는 사용자가 명령을 실행하는 시점의 위치를 클래스패스로 설정한다. 따라서 (사용자의 현재 위치가 `/java/export`라고 했을 때) 위에서 실행했던 클래스패스를 명시하지 않은 `$ java MyClass`는 다음 명령과 같다.
@@ -67,8 +66,7 @@ Happy Coding!
 ```
 - 실행하고자 하는 프로그램의 클래스 파일 위치가 클래스패스와 같으면 프로그램을 실행할 수 있다.
 
-## 비교적 복잡한 경우의 실행 환경을 만들고 실행해본다.
-### 현재 위치에 클래스 파일이 없을 때 클래스패스 설정
+## 현재 위치에 클래스 파일이 없는 경우
 - MyClass 프로그램을 실행하려고 할 때 사용자의 위치가 `MyClass.class` 파일이 있는 곳이 아니라면, 클래스패스를 설정하지 않을 경우 오류가 난다. 왜냐하면 `java` 명령을 실행할 때 클래스패스를 명시하지 않으면 명령을 실행하는 디렉토리(즉 사용자의 위치)로 클래스패스가 설정되는데, 그곳엔 실행하려는 `MyClass.class` 파일이 없기 때문이다.
 ```
 $ cd /somewhere/else
@@ -84,7 +82,7 @@ $ java -classpath /java/export MyClass
 Happy Coding!
 ```
 
-### 패키지를 사용하는 자바 파일의 클래스패스 설정
+## 패키지를 사용하는 경우
 - 자바 파일 상단에 `package ...`와 같은 패키지 선언이 있는 경우, 이전과 같은 방식으로는 프로그램을 실행할 수 없다.
 
 1. 테스트를 위해 실행 환경을 만든다.
@@ -156,7 +154,7 @@ $ java -classpath /java/export com.sesoon.MyClass
 Happy Coding!
 ```
 
-### 외부 라이브러리를 사용하는 경우 클래스패스 설정
+## 외부 라이브러리를 사용하는 경우
 - 외부 파일(`.class` 파일, `.jar` 파일 등)에 의존하는 자바 프로그램은 클래스 파일을 생성할 때 `javac` 명령의 클래스패스 옵션에 (자바 파일 경로뿐 아니라) 프로그램이 의존하는 외부 파일의 경로를 추가해야 한다.
 - 예를 들어 `/java/export` 안 `MySQLDriverLoader.java`라는 자바 파일이 `jdbc` 패키지에 포함되고, `/java/export/lib` 디렉토리에 있는 `servlet-api.jar` 안 클래스를 사용하고(의존하고) 있다고 가정하자.
 - 그러면 `-classpath` 옵션으로 (자바 파일이 위치한 디렉토리 경로와) `MySQLDriverLoader.java` 파일이 의존하는 `servlet-api.jar` 파일 경로를 명시해야 한다.
@@ -175,7 +173,7 @@ Happy Coding!
                └── MySQLDriverLoader.class
 ```
 
-### 참고 자료
+## 참고 자료
 - https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html
 - https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html
 - https://effectivesquid.tistory.com/entry/자바-클래스패스classpath란?category=658328
