@@ -107,7 +107,7 @@ public class MyClass {
 ```
 $ cd /java/export
 $ javac MyClass.java
-$ java -cp /java/export MyClass
+$ java -classpath /java/export MyClass
 Error: Could not find or load main class MyClass
 Caused by: java.lang.NoClassDefFoundError: com/sesoon/MyClass (wrong name: MyClass)
 ```
@@ -152,7 +152,7 @@ $ javac -d /java/export/ MyClass.java
 
 - 이제 `MyClass`를 실행할 수 있다.
 ```
-$ java -cp /java/export com.sesoon.MyClass
+$ java -classpath /java/export com.sesoon.MyClass
 Happy Coding!
 ```
 
