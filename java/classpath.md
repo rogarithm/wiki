@@ -171,7 +171,7 @@ Happy Coding!
                └── MySQLDriverLoader.class
 ```
 
-### 참고자료
+### 참고 자료
 - https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html
 - https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html
 - https://effectivesquid.tistory.com/entry/자바-클래스패스classpath란?category=658328
