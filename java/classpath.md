@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-08-23 01:26:41 +0900
-updated : 2022-09-02 23:27:23 +0900
+updated : 2022-09-02 23:41:39 +0900
 tags    : 
 toc     : true
 public  : true
@@ -163,6 +163,10 @@ Happy Coding!
 
 ```
 > javac -d /java/export/classes -classpath /java/export/lib/servlet-api.jar:/java/export /java/export/jdbc/MySQLDriverLoader.java
+```
+
+- 명령 실행 후 폴더 구조를 확인해보면 다음과 같다.
+```
 /
 └──java/
    └── export/
